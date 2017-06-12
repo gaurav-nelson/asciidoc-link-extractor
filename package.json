@@ -1,0 +1,17 @@
+{
+  "name": "asciidoc-link-extractor",
+  "version": "1.0.0",
+  "description": "Extract all hyperlinks from asciidoc files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "asciidoc",
+    "link",
+    "hyperlinks",
+    "extractor"
+  ],
+  "author": "Gaurav Nelson",
+  "license": "MIT"
+}
