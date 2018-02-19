@@ -1,23 +1,5 @@
 'use strict';
 
-function uniq(a) {
-    var prims = {
-            "boolean": {},
-            "number": {},
-            "string": {}
-        },
-        objs = [];
-
-    return a.filter(function (item) {
-        var type = typeof item;
-        if (type in prims)
-            return prims[type].hasOwnProperty(item) ? false : (prims[type][item] = true);
-        else
-            return objs.indexOf(item) >= 0 ? false : objs.push(item);
-    });
-}
-
-
 module.exports = function asciidocLinkExtractor(asciidocFile) {
     var links = [];
 
@@ -29,7 +11,7 @@ module.exports = function asciidocLinkExtractor(asciidocFile) {
         }
     }
     if (links[0] != null) {
-        links = uniq(links);
+        links = Array.from(new Set(links));
     }
 
     return links;
