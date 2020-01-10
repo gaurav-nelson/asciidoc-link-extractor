@@ -1,6 +1,6 @@
 {
   "name": "asciidoc-link-extractor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extract all hyperlinks from asciidoc files.",
   "main": "index.js",
   "scripts": {
